@@ -1,6 +1,6 @@
 package _2AbstractFactory;
 
-public class User {
+public class Main {
 	public static void main(String[] args) {
 		AbstractFactory af;
 		Color color ;

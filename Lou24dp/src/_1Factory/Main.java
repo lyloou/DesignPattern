@@ -1,6 +1,6 @@
 package _1Factory;
 
-public class ShapeTest {
+public class Main {
 
 	public static void main(String[] args) {
 		ShapeFactory sf = new ShapeFactory();
