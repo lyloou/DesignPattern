@@ -1,0 +1,19 @@
+package _2AbstractFactory;
+
+public class User {
+	public static void main(String[] args) {
+		AbstractFactory af;
+		Color color ;
+		Shape shape;
+		// 生产「绿」。
+		af = FactoryProducer.getFactory("ColorFactory");
+		color = af.getColor("GREEN");
+		color.draw();
+		
+		// 生产「圆」
+		af = FactoryProducer.getFactory("ShapeFactory");
+		shape = af.getShape("Rectangle");
+		shape.draw("2");
+		
+	}
+}
