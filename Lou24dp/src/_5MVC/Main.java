@@ -10,7 +10,7 @@ public class Main{
 		student.setName("zhangsan");
 		student.setNo(1);
 		
-		// 控制器进行控制
+		// 控制器进行控制（控制数据到视图上面显示）
 		StudentController sc = new StudentController(student,sv);
 		sc.updateStudent();
 		
