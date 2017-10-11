@@ -2,7 +2,7 @@ package _2AbstractFactory;
 
 public class FactoryProducer {
 	public static AbstractFactory getFactory(String str){
-		if(str.equalsIgnoreCase("ShapeFactory")){
+		if(str.equalsIgnoreCase("SimpleFactory")){
 			return new ShapeFactory();
 		}
 		

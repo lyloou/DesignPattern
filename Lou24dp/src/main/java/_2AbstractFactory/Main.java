@@ -11,7 +11,7 @@ public class Main {
 		color.draw();
 		
 		// 生产「圆」
-		af = FactoryProducer.getFactory("ShapeFactory");
+		af = FactoryProducer.getFactory("SimpleFactory");
 		shape = af.getShape("Rectangle");
 		shape.draw("2");
 		

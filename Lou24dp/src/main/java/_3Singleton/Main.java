@@ -135,6 +135,7 @@ enum Enum {
 // 5.双重校验锁
 // - instance==null时才进入锁机制；
 // - 为什么两次校验 instance == null（一次在同步块外，一次在同步块内）？因为有可能多个线程一起进入if语句，如果不进行第二次判断就有可能产生多个实例
+//   ,,,,,,第一次为了不必要的同步，第二次是在DoubleCheck等于 null 的情况下才创建实例。
 // - 注意：instance = new DoubleCheck();是非原子操作的。
 // - [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
 // - 对于volatile修饰的变量，jvm虚拟机只是保证从主内存加载到线程工作内存的值是最新的(http://www.cnblogs.com/aigongsi/archive/2012/04/01/2429166.html)
