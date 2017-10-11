@@ -3,7 +3,7 @@ package _5MVC;
 class StudentController{
 	Student student;
 	StudentView sv;
-	StudentController(Student student,StudentView sv){
+	StudentController(Student student, StudentView sv){
 		this.student = student;
 		this.sv = sv;
 	}
