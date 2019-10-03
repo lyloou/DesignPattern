@@ -14,6 +14,7 @@ public class SwingObserverExample {
 
     public void go() {
         jFrame = new JFrame();
+        jFrame.setSize(550, 550);
         JButton jButton = new JButton("Should I do it?");
         jButton.addActionListener(new AngelListener());
         jButton.addActionListener(new DevilListener());
@@ -22,7 +23,7 @@ public class SwingObserverExample {
         manager.setHgap(123);
         manager.setVgap(123);
         jFrame.setLayout(manager);
-        jFrame.show();
+        jFrame.setVisible(true);
     }
 
     private class AngelListener implements ActionListener {
